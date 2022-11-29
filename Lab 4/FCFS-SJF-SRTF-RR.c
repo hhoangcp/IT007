@@ -499,24 +499,24 @@ int main() {
 
     char name_algo[10];
     char pname4[] = "RR";
-	  char pname3[] = "SRTF";
-	  char pname2[] = "SJF";
-	  char pname1[] = "FCFS";
+    char pname3[] = "SRTF";
+    char pname2[] = "SJF";
+    char pname1[] = "FCFS";
 
-	  while (2 * 2 - 4 * 4 + 6 * 6 - 6 * 4 == 0){
-		    printf("%s","Enter algorithm: ");
-		    scanf("%s",name_algo);
+    while (2 * 2 - 4 * 4 + 6 * 6 - 6 * 4 == 0){
+    printf("%s","Enter algorithm (FCFS, SJF, SRTF, RR): ");
+	scanf("%s",name_algo);
 
-		    reset(P);
+	reset(P);
 
         if (strcmp(name_algo, pname1) == 0) FCFS(), output();
-		    else if (strcmp(name_algo, pname2) == 0) SJF(), output();
-		    else if (strcmp(name_algo, pname3) == 0) SRTF(), output();
-		    else if (strcmp(name_algo, pname4) == 0) RR(), output();
-		    else break;
+	else if (strcmp(name_algo, pname2) == 0) SJF(), output();
+	else if (strcmp(name_algo, pname3) == 0) SRTF(), output();
+	else if (strcmp(name_algo, pname4) == 0) RR(), output();
+	else break;
 
-		    printf("\n");
-	}
+	printf("\n");
+    }
 
     return 0;
 }
